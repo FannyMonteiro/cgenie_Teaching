@@ -156,7 +156,7 @@ CONTAINS
        ! resource and temperature limited uptake
        if (nuts(ii).gt.0.0) then
           up_inorg(ii,:) = gamma_T * vmax(ii,:) * affinity(ii,:) * nuts(ii) &
-               & / (vmax(ii,:) + affinity(ii,:) * nuts(ii))
+               & / (vmax(ii,:) + affinity(ii,:) * nuts(ii))            
           ! Equivalent to classic Michaelis-Menten form ...
           !     up_inorg(ii,:) = gamma_T * vmax(ii,:) * nuts(ii) / (nuts(ii) +kn(ii,:))
           if (fundamental) up_inorg(ii,:) = gamma_T * vmax(ii,:)

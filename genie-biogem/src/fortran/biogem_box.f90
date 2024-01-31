@@ -793,6 +793,9 @@ CONTAINS
                & loc_kI*                                                                                                &
                & min(loc_PO4,bio_part_red(is_POC,is_POP,dum_i,dum_j)*loc_FeT/bio_part_red(is_POC,is_POFe,dum_i,dum_j))/ &
                & par_bio_tau
+               
+       ! Add plastic pollution using col3 as a plastic tracer - Jan 2024 (Marnie's UG dissertation)
+         loc_PO4 = loc_PO4*(1-0.5*ocn(io_col3,dum_i,dum_j,n_k))
        else
           loc_dPO4 = 0.0
        end if

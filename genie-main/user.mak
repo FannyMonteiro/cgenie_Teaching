@@ -23,9 +23,9 @@
 # ====================================================================
 
 ## === Compre the values below to those in user.sh ===
-GENIE_ROOT        = $(HOME)/cgenie.muffin
+GENIE_ROOT        = $(HOME)/cgenie_Teaching
 OUT_DIR           = $(HOME)/cgenie_output
-RUNTIME_ROOT      = ../../cgenie.muffin
+RUNTIME_ROOT      = ../../cgenie_Teaching
 
 # === Fortran compiler (ifc/ifort/f90/pgf90) ===
 F77=gfortran
@@ -74,7 +74,7 @@ MODEXT=mod
 # (http://www.unidata.ucar.edu/packages/netcdf/index.html)
 
 ### DEFAULT ###
-NETCDF_DIR=/usr/local
+#NETCDF_DIR=/usr/local
 ### domino ###
 #NETCDF_DIR=/share/apps
 ### eevee ###
@@ -84,7 +84,7 @@ NETCDF_DIR=/usr/local
 ### sprout ###
 #NETCDF_DIR=/share/apps/netcdf/4.0/gnu_fc_4.4.6
 ### almond ###
-#NETCDF_DIR=/share/apps/netcdf-4.0/gcc-4.4.7
+NETCDF_DIR=/share/apps/netcdf-4.0/gcc-4.4.7
 ### VM ###
 #NETCDF_DIR=/home/mushroom/netcdf/ifort
 ### Ben Mac Pro ###
